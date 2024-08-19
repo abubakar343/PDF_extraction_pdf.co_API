@@ -1,6 +1,6 @@
 # PDF to Excel Conversion using pdf.co API
 
-This project is designed to convert PDF files to Excel format using the pdf.co pdf.co API. The script automates the process of uploading a PDF file, converting it to an Excel file, and then downloading the converted file.
+This project is designed to convert PDF files to Excel format using the [PDF.co](https://pdf.co) API. The script automates the process of uploading a PDF file, converting it to an Excel file, and then downloading the converted file.
 
 ## Features
 
