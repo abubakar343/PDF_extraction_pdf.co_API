@@ -1,6 +1,6 @@
 # PDF to Excel Conversion using pdf.co API
 
-This project is designed to convert PDF files to Excel format using the [PDF.co](https://pdf.co) API. The script automates the process of uploading a PDF file, converting it to an Excel file, and then downloading the converted file.
+This project is designed to convert PDF files to Excel format using the [pdf.co](https://pdf.co) API. The script automates the process of uploading a PDF file, converting it to an Excel file, and then downloading the converted file.
 
 ## Features
 
@@ -10,7 +10,7 @@ This project is designed to convert PDF files to Excel format using the [PDF.co]
 
 ## Files
 
-- `main.py`: The main script responsible for converting PDFs to Excel format using the pdf.co API.
+- `main.py`: The main script responsible for converting PDFs to Excel format using the [pdf.co](https://pdf.co) API.
 
 ## Dependencies
 
@@ -29,7 +29,7 @@ pip install pandas requests
 
 ## Usage
 
-1. **API Key Configuration**: Set your pdf.co API key in the `API_KEY` variable within the script.
+1. **API Key Configuration**: Set your [pdf.co](https://pdf.co) API key in the `API_KEY` variable within the script.
 2. **Source PDF File**: Specify the path to the PDF file you want to convert by setting the `SourceFile` variable.
 3. **Destination File**: Define the name and path for the resulting Excel file by setting the `DestinationFile` variable.
 4. **Run the Script**: Execute `main.py` to start the conversion process.
