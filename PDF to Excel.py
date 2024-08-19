@@ -1,33 +1,26 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
-
-
+#import necessary libraries
 import pandas as pd
-
-
-# In[2]:
-
-
 import os
 import requests
 import shutil
 
 # The authentication key (API Key)
-API_KEY = "abubakar343@gmail.com_dda4dbca7d7757833349f62d6dab1c19ce70ca9ee2a8fd103e4ddaab35dc9114840cd22d"
+API_KEY = "your_api_key"
 
 # Base URL for PDF.co Web API requests
 BASE_URL = "https://api.pdf.co/v1"
 
 # Source PDF file
-SourceFile = "Weekly frozen pricing for WE 09-02-23.pdf"
+SourceFile = "your_pdf_file.pdf"
 # Comma-separated list of page indices (or ranges) to process. Leave empty for all pages. Example: '0,2-5,7-'.
 Pages = ""
 # PDF document password. Leave empty for unprotected documents.
 Password = ""
 # Destination Excel file name
-DestinationFile = "result.xlsx"
+DestinationFile = "excel_file.xlsx"
 
 def main(args=None):
     uploadedFileUrl = uploadFile(SourceFile)
@@ -92,26 +85,3 @@ def uploadFile(fileName):
 
 if __name__ == '__main__':
     main()
-
-
-# In[3]:
-
-
-pip install tabula-py
-
-
-# In[5]:
-
-
-import tabula
-# Read a PDF File
-df = tabula.read_pdf("Weekly frozen pricing for WE 09-02-23.pdf", pages='all')[0]
-# convert PDF into CSV
-tabula.convert_into("Weekly frozen pricing for WE 09-02-23.pdf", "result.csv", output_format="csv", pages='all')
-
-
-# In[ ]:
-
-
-
-
